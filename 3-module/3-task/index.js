@@ -2,8 +2,8 @@ function camelize(str) {
   // ваш код...
   return str
     .split('')
-    .map((item, index, array) => array[index-1]==='-' ? item.toUpperCase() : item)
-    .filter(item => item!=='-')
+    .map((item, index, array) => array[index - 1] === '-' ? item.toUpperCase() : item)
+    .filter(item => item !== '-')
     .join('');
 }
 

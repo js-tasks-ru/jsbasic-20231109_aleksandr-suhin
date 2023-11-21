@@ -1,11 +1,11 @@
 function getMinMax(str) {
   let numbers = str
-  .split(' ')
-  .filter(item=> isFinite(item));
+    .split(' ')
+    .filter(item => isFinite(item));
   return {
     min: Math.min(...numbers),
     max: Math.max(...numbers)
-  }  
+  }
 }
 
 // let inputData = '1 и -5.8 или 10 хотя 34 + -5.3 и 73';
