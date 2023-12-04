@@ -4,5 +4,3 @@ function hideSelf() {
     if (event.target.classList.contains('hide-self-button')) event.target.hidden = true;
   });
 }
-
-
