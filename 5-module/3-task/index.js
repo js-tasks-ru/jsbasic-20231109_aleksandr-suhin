@@ -1,8 +1,9 @@
-function initCarousel() {
+function initCarousel(countElem = 4) {
   // ваш код...
   let currentNumber = 0;
-  const countElem = 4;
-  CheckArrowsVisible();
+  //const countElem = 4;  
+  let left = document.querySelector('.carousel__arrow_left');
+  if (left != null) left.style.display = 'none';
   document.addEventListener('click', function (event) {
     let arrowDiv = event.target.closest('div');
     let isLeft = arrowDiv.classList.contains('carousel__arrow_left');
@@ -32,3 +33,4 @@ function initCarousel() {
       = (currentNumber === countElem - 1) ? 'none' : '';
   }
 }
+
