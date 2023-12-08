@@ -1,5 +1,5 @@
 import createElement from '../../assets/lib/create-element.js';
-import { initCarousel } from '../../5-module/3-task/index.js';
+import '../../5-module/3-task/index.js';
 
 export default class Carousel {
   constructor(slides) {

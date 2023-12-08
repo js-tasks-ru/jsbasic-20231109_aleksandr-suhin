@@ -6,6 +6,7 @@ function initCarousel(countElem = 4) {
   if (left != null) left.style.display = 'none';
   document.addEventListener('click', function (event) {
     let arrowDiv = event.target.closest('div');
+    if (arrowDiv == null) return;
     let isLeft = arrowDiv.classList.contains('carousel__arrow_left');
     let isRight = arrowDiv.classList.contains('carousel__arrow_right');
 
