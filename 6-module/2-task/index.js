@@ -21,9 +21,10 @@ export default class ProductCard {
       bubbles: true // это событие всплывает - это понадобится в дальнейшем
     });
 
-    this._container.addEventListener('click', function (evt) {
+    //попробовал обновить, тут верно?
+    this._container.addEventListener('click', (evt) => {
       if (evt.target.closest('.card__button')) {
-        evt.target.closest('.card').dispatchEvent(customEevent);
+        this._container.dispatchEvent(customEevent);
       }
     });
   }
