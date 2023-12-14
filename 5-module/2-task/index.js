@@ -1,9 +1,8 @@
 function toggleText() {
-  // ваш код...
   document.addEventListener('click', function (event) {
     if (event.target.classList.contains('toggle-text-button')) {
-      if (text.hasAttribute('hidden')) text.removeAttribute('hidden');
-      else text.setAttribute('hidden', true);
+      let text1 = event.target.nextElementSibling;
+      text1.hidden = text1.hidden == true ? false : true;
     }
   });
 }
